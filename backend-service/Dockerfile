@@ -23,4 +23,4 @@ RUN pip install --no-cache-dir -r backend-service/requirements.txt
 EXPOSE 8000
 
 # Command to run the application
-CMD ["python", "server.py"]
+CMD ["python", "backend-service/server.py"]
