@@ -11,7 +11,7 @@ def main():
     os.makedirs("models", exist_ok=True)
     
     # Download YOLOv3-tiny weights
-    yolov3_tiny_url = "https://https://github.com/smarthomefans/darknet-test/blob/master/yolov3-tiny.weights"
+    yolov3_tiny_url = "https://github.com/smarthomefans/darknet-test/raw/master/yolov3-tiny.weights"
     yolov3_tiny_path = os.path.join("models", "yolov3-tiny.weights")
     
     if not os.path.exists(yolov3_tiny_path):
