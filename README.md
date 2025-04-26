@@ -1,4 +1,4 @@
-# 🔍 ML Vision Project
+# <img src="./ml-vision/public/vision-logo.png" alt="ML Vision Logo" width="30" height="30"> ML Vision Project
 
 A comprehensive computer vision showcase application with a Next.js frontend and FastAPI backend.
 
