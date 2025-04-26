@@ -1,4 +1,4 @@
-# <img src="./ml-vision/public/vision-logo.png" alt="ML Vision Logo" width="30" height="30"> ML Vision Project
+# <img src="./ml-vision/public/vision-logo.png" alt="ML Vision Logo" width="40" height="40"> ML Vision Project
 
 A comprehensive computer vision showcase application with a Next.js frontend and FastAPI backend.
 
@@ -26,7 +26,7 @@ This monorepo contains two main components:
 ### Prerequisites
 
 - Node.js 18+ and pnpm for the frontend
-- Python 3.9+ for the backend
+- Python 3.10+ for the backend (required for SAM2 image segmentation)
 - OpenAI API key for image generation
 
 ### Running Locally
