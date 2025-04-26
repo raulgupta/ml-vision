@@ -6,7 +6,8 @@
     "dev": "next dev -p 4000",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "vercel-build": "git lfs install && git lfs pull && pnpm run build"
   },
   "dependencies": {
     "@mlc-ai/web-llm": "^0.2.75",
