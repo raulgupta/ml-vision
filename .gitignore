@@ -1,0 +1,53 @@
+# Next.js (Frontend)
+ml-vision/.next/
+ml-vision/out/
+ml-vision/node_modules/
+ml-vision/.env
+ml-vision/.env.local
+ml-vision/.env.development.local
+ml-vision/.env.test.local
+ml-vision/.env.production.local
+ml-vision/npm-debug.log*
+ml-vision/yarn-debug.log*
+ml-vision/yarn-error.log*
+ml-vision/.vercel
+
+# Python (Backend)
+backend-service/__pycache__/
+backend-service/*.py[cod]
+backend-service/*$py.class
+backend-service/*.so
+backend-service/.Python
+backend-service/env/
+backend-service/build/
+backend-service/develop-eggs/
+backend-service/dist/
+backend-service/downloads/
+backend-service/eggs/
+backend-service/.eggs/
+backend-service/lib/
+backend-service/lib64/
+backend-service/parts/
+backend-service/sdist/
+backend-service/var/
+backend-service/*.egg-info/
+backend-service/.installed.cfg
+backend-service/*.egg
+backend-service/venv/
+backend-service/ENV/
+backend-service/.env
+backend-service/models/sam2_cache/
+
+# Large files
+ml-vision/public/truck.mp4
+ml-vision/public/truck_rgba_slices/
+backend-service/models/**/*.pth
+backend-service/models/**/*.weights
+backend-service/models/**/*.tflite
+
+# Common
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo

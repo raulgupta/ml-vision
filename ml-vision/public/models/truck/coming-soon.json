@@ -1,0 +1,8 @@
+{
+  "name": "Truck",
+  "status": "coming-soon",
+  "description": "A detailed 3D truck model rendered using Neural Radiance Fields technology.",
+  "resolution": "256x256x256",
+  "slices": 256,
+  "estimatedRelease": "Coming Soon"
+}
