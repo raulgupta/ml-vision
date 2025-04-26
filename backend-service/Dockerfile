@@ -2,7 +2,7 @@ FROM python:3.10-slim
 
 WORKDIR /app
 
-# Install system dependencies for OpenCV and git-lfs
+# Install system dependencies for OpenCV, git, and git-lfs
 RUN apt-get update && apt-get install -y \
     libgl1-mesa-glx \
     libglib2.0-0 \
@@ -10,13 +10,22 @@ RUN apt-get update && apt-get install -y \
     git-lfs \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy application code first (including .git and .gitattributes)
+# Copy the .git directory and .gitattributes to set up Git context
+COPY .git .git
+COPY .gitattributes .
+
+# Initialize Git repository and configure LFS
+RUN git init && \
+    git remote add origin https://github.com/raulgupta/ml-vision.git && \
+    git fetch origin && \
+    git checkout main && \
+    git lfs install && \
+    git lfs pull
+
+# Copy the rest of the application code
 COPY . .
 
-# Initialize git-lfs and pull files
-RUN git lfs install && git lfs pull
-
-# Install dependencies
+# Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Expose the port
