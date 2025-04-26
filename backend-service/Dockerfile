@@ -17,7 +17,7 @@ RUN git clone https://github.com/raulgupta/ml-vision.git /app && \
     git lfs pull
 
 # Install Python dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r backend-service/requirements.txt
 
 # Expose the port
 EXPOSE 8000
