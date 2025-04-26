@@ -38,13 +38,6 @@ backend-service/ENV/
 backend-service/.env
 backend-service/models/sam2_cache/
 
-# Large files
-ml-vision/public/truck.mp4
-ml-vision/public/truck_rgba_slices/
-backend-service/models/**/*.pth
-backend-service/models/**/*.weights
-backend-service/models/**/*.tflite
-
 # Common
 .DS_Store
 .idea/
